@@ -3,6 +3,18 @@
 
 
 Employee Management System that enables streamlined database handling, encompassing salary records, role assignments, and departmental information, thereby enhancing the overall organizational efficiency in managing employee data.
+## Features
+
+- Employee Records: Maintain a detailed database of employee records, including personal information, contact details, and employment history.
+
+- Salary Management: Easily manage and track salary records, including payroll processing, deductions, and bonuses, ensuring accurate and timely salary disbursement.
+
+- Role Assignments: Assign roles and responsibilities to employees, facilitating clear organizational hierarchies and defining who can access and modify specific data.
+
+- Departmental Information: Organize employees into departments and divisions, making it simple to manage teams and collaborate effectively.
+
+- Search and Filtering: Robust search and filtering options allow users to quickly locate specific employees, making data retrieval efficient..
+
 
 
 ## Screenshots
