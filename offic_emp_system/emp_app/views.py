@@ -18,8 +18,7 @@ def all_emp(request):
     context = {
         'emps': emps
     }
-    print("yyyyyyyyyyyyyyy",context)
-    print(connection.queries)
+    
     return render(request, 'view_all_emp.html', context)
 
 
@@ -34,8 +33,7 @@ def add_emp(request):
         role = int(request.POST['role'])
         new_emp = Employee(first_name= first_name, last_name=last_name, salary=salary, bonus=bonus, phone=phone, dept_id = dept, role_id = role, hire_date = datetime.now())
         new_emp.save()
-        print(new_emp)
-        print(connection.queries)
+     
         return HttpResponse('Employee added Successfully')
     elif request.method=='GET':
         return render(request, 'add_emp.html')
@@ -55,8 +53,7 @@ def remove_emp(request, emp_id = 0):
     context = {
         'emps': emps
     }
-    print("ooooooooooooooooo",context)
-    print(connection.queries)
+   
     return render(request, 'remove_emp.html',context)
 
 
