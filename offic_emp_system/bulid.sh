@@ -9,7 +9,6 @@ echo "Building your project..."
 # Uncomment and modify the following line if your project requires dependency installation
 
  Python 3.11.2 -m  pip install -r requirements.txt
- python 3.11.2  manage.py collectstatic --noinput--clear
 
 echo "make migration..."
 python 3.11.2  manage.py makemigrations --noinput--
@@ -26,4 +25,5 @@ python 3.11.2  manage.py migrate --noinput--
 
 # Add more build steps as needed
 
-echo "Build completed successfully!"
+echo "collectstatic..........."
+python 3.11.2  manage.py collectstatic --noinput--clear
