@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "offic_emp_system/wsgi.py" ,
+        
+        "use": "@vercel/python" ,
+
+        "config": {"maxLambdaSize":"15mb" , "runtime": "Python 3.11.2"}
+    }
+    ],
+    "routes": [
+      { 
+      "src": "/(.*)", 
+      "dest": "offic_emp_system/wsgi.py" }
+    
+    ]
+  }
+  
